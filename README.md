@@ -36,7 +36,6 @@ OR
 4️⃣ Run Application
 - python app.py
 
-Open your browser → http://127.0.0.1:5000/
 # Sample Output
 - [Home Page](https://github.com/Divyasree1405/Resume-Analyzer-project/blob/main/RESUME%20ANALYZER/Screenshots/Home_page.png)
 - [Result Page](https://github.com/Divyasree1405/Resume-Analyzer-project/blob/main/RESUME%20ANALYZER/Screenshots/Result_page_1.png)
