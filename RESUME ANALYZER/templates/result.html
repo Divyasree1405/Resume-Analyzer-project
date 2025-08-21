@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Result • Resume Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Analysis Result</h1>
+
+    {% if error %}
+      <div class="error">{{ error }}</div>
+      <p><a href="/">Go back</a></p>
+    {% else %}
+      <div class="score">ATS Match Score: <strong>{{ score }}%</strong></div>
+
+      {% if sample_suggestions %}
+        <div class="card">
+          <h3>Suggestions</h3>
+          <ul>
+            {% for s in sample_suggestions %}
+              <li>{{ s }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      <div class="grid">
+        <div class="card">
+          <h3>Matched Keywords</h3>
+          {% if matched %}
+            <ul>
+              {% for w in matched %}
+                <li>{{ w }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p>No strong matches found.</p>
+          {% endif %}
+        </div>
+
+        <div class="card">
+          <h3>Missing Keywords</h3>
+          {% if missing %}
+            <ul>
+              {% for w in missing %}
+                <li>{{ w }}</li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <p>Looks great — nothing critical missing!</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <p><a href="/">Analyze another resume</a></p>
+    {% endif %}
+  </div>
+</body>
+</html>

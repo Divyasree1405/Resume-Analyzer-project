@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Analyzer (ATS Checker)</h1>
+    <p>Upload your resume and paste a job description to see your match score.</p>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data" class="card">
+      <label>Resume (PDF/DOCX/TXT)</label>
+      <input type="file" name="resume" accept=".pdf,.docx,.txt" required />
+
+      <label>Job Description</label>
+      <textarea name="jd" rows="10" placeholder="Paste the job description here..." required></textarea>
+
+      <button type="submit">Analyze</button>
+    </form>
+  </div>
+</body>
+</html>
