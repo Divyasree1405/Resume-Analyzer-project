@@ -15,31 +15,31 @@ This tool helps job seekers check how well their resume matches a given job desc
 - Simple web interface built with Flask
 # Tech Stack
 
--Backend: Python, Flask
--NLP: NLTK (tokenization, stopword removal, stemming)
--Frontend: HTML, CSS (Flask Templates)
--File Handling: PyPDF2, docx2txt
+- Backend: Python, Flask
+- NLP: NLTK (tokenization, stopword removal, stemming)
+- Frontend: HTML, CSS (Flask Templates)
+- File Handling: PyPDF2, docx2txt
 # Installation & Usage
 1️⃣ Clone Repository
-git clone https://github.com/yourusername/resume-analyzer.git
-cd resume-analyzer
+- git clone https://github.com/yourusername/resume-analyzer.git
+- cd resume-analyzer
 
 2️⃣ Setup Virtual Environment
-python -m venv venv
-venv\Scripts\activate   # Windows
+- python -m venv venv
+- venv\Scripts\activate   # Windows
 OR
-source venv/bin/activate   # Mac/Linux
+- source venv/bin/activate   # Mac/Linux
 
 3️⃣ Install Dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 4️⃣ Run Application
-python app.py
+- python app.py
 
 Open your browser → http://127.0.0.1:5000/
 # Sample Output
-![Home Page](screenshots/home.png)
-![Result Page](screenshots/result.png)
+- ![Home Page](screenshots/home.png)
+- ![Result Page](screenshots/result.png)
 # Future Improvements
 
 - Add charts/visualizations for ATS score
