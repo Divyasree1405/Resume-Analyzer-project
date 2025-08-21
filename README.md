@@ -6,13 +6,13 @@ A simple ATS (Applicant Tracking System) Resume Analyzer built with Python, Flas
 This tool helps job seekers check how well their resume matches a given job description by highlighting ATS score, matched keywords, and missing keywords.
 # Features
 
--Upload PDF/DOCX/TXT resumes
--Paste any Job Description (JD)
--Get an ATS Score (%) instantly
--See matched keywords between resume & JD
--Identify missing keywords to improve resume
--Suggestions to increase ATS score
--Simple web interface built with Flask
+- Upload PDF/DOCX/TXT resumes
+- Paste any Job Description (JD)
+- Get an ATS Score (%) instantly
+- See matched keywords between resume & JD
+- Identify missing keywords to improve resume
+- Suggestions to increase ATS score
+- Simple web interface built with Flask
 # Tech Stack
 
 -Backend: Python, Flask
@@ -27,7 +27,7 @@ cd resume-analyzer
 2️⃣ Setup Virtual Environment
 python -m venv venv
 venv\Scripts\activate   # Windows
-# OR
+OR
 source venv/bin/activate   # Mac/Linux
 
 3️⃣ Install Dependencies
@@ -42,7 +42,7 @@ Open your browser → http://127.0.0.1:5000/
 ![Result Page](screenshots/result.png)
 # Future Improvements
 
--Add charts/visualizations for ATS score
--Export analysis as PDF report
--Weight keywords based on importance (skills > soft skills)
--Deploy to Render/Heroku for public access
+- Add charts/visualizations for ATS score
+- Export analysis as PDF report
+- Weight keywords based on importance (skills > soft skills)
+- Deploy to Render/Heroku for public access
